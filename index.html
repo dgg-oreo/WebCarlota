@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Carlota | Pastelería Artesanal</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body id="top">
+
+
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="wobble" x="-5%" y="-40%" width="110%" height="180%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="3" result="n">
+          <animate attributeName="seed" values="3;8;14;5" dur="0.9s" calcMode="discrete" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+
+      <filter id="grain-edge" x="-2%" y="-10%" width="104%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+
+
+
+
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="topbar__name">Proyecto Carlota</span>
+    </div>
+    <span class="pill"><span class="pill__heart" aria-hidden="true">&hearts;</span> Pastelería Artesanal</span>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <span class="deco deco--heart" style="top:9%;left:4%;--r:-15deg;--t:5s" aria-hidden="true">&hearts;</span>
+      <span class="deco deco--sprinkle" style="top:16%;left:45%;--r:35deg;--t:6s" aria-hidden="true"></span>
+      <span class="deco deco--ring deco--hide-sm" style="bottom:14%;left:49%;--r:0deg;--t:7s" aria-hidden="true"></span>
+      <span class="deco deco--heart deco--hide-sm" style="top:10%;right:5%;--r:12deg;--t:6s" aria-hidden="true">&hearts;</span>
+      <span class="deco deco--squiggle" style="top:7%;left:60%;--r:-8deg;--t:6.5s" aria-hidden="true"></span>
+      <span class="deco deco--sprinkle" style="bottom:9%;right:7%;--r:60deg;--t:5.5s" aria-hidden="true"></span>
+      <span class="deco deco--ring" style="bottom:8%;left:8%;--r:0deg;--t:6.5s" aria-hidden="true"></span>
+
+      <div class="container hero__grid">
+
+        <!-- Imagen 1 -->
+        <figure class="img-slot img-slot--hero">
+
+               <img src="./src/img/Img1.png" alt="Dona sonriente con los brazos arriba"> 
+        </figure>
+
+        <div class="hero__text">
+          <p class="hero__to">Para: <span class="line"></span></p>
+          <p class="hero__message">
+            Felicidades!! Has sido <span class="scrawl">invitado</span> para probar nuestros deliciosos productos
+          </p>
+          <a class="btn" href="#menu">Ver el menú</a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="menu" id="menu">
+      <div class="container menu__grid">
+
+        <div class="menu__content reveal reveal--left">
+          <h2 class="menu__title draw">Menú</h2>
+
+          <div class="menu__group">
+            <h3>Postres</h3>
+            <ul>
+              <li>Carlota</li>
+              <li>Cupcakes</li>
+            </ul>
+          </div>
+
+          <hr class="menu__divider">
+
+          <div class="menu__group">
+            <h3>Café</h3>
+            <ul>
+              <li>Espresso</li>
+              <li>Americano</li>
+              <li>Latte</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <figure class="img-slot img-slot--card reveal reveal--right">
+
+               <img src="./src/img/Img2.png" alt="Persona cargando un pastel con cereza"> 
+        </figure>
+
+      </div>
+    </section>
+
+  
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <h2 class="section-title draw">Nuestros productos</h2>
+
+        <div class="gallery__grid">
+
+          <figure class="gallery__item reveal" style="--d:0s">
+            <div class="img-slot img-slot--gallery"><span>Imagen 3</span></div>
+            <figcaption>Carlota</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" style="--d:0.12s">
+            <div class="img-slot img-slot--gallery"><span>Imagen 4</span></div>
+            <figcaption>Cupcakes</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" style="--d:0.24s">
+            <div class="img-slot img-slot--gallery"><span>Imagen 5</span></div>
+            <figcaption>Latte</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" style="--d:0.36s">
+            <div class="img-slot img-slot--gallery"><span>Imagen 6</span></div>
+            <figcaption>Americano</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about" id="sobre-carlota">
+      <span class="deco deco--heart" style="top:16%;left:4%;--r:-10deg;--t:6s" aria-hidden="true">&hearts;</span>
+      <span class="deco deco--sprinkle" style="top:20%;right:6%;--r:40deg;--t:5s" aria-hidden="true"></span>
+      <span class="deco deco--squiggle deco--hide-sm" style="bottom:10%;left:46%;--r:6deg;--t:7s" aria-hidden="true"></span>
+      <span class="deco deco--ring" style="bottom:9%;right:5%;--r:0deg;--t:6.5s" aria-hidden="true"></span>
+
+      <div class="container about__grid">
+
+
+        <figure class="img-slot img-slot--card reveal reveal--left">
+        </figure>
+
+        <div class="about__text reveal reveal--right">
+          <h2 class="section-title section-title--left draw">Sobre Carlota</h2>
+          <p>
+            Proyecto Carlota nació en una cocina pequeña, con una receta de familia
+            y muchas ganas de compartirla. Cada postre se hace a mano, con
+            ingredientes frescos y sin prisa.
+          </p>
+          <p>
+            Queremos que cada visita se sienta como llegar a casa: un café
+            caliente, algo dulce y buena compañía.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq__container">
+        <h2 class="section-title draw">Preguntas frecuentes</h2>
+
+        <details class="faq__item reveal" style="--d:0s">
+          <summary>¿La invitación tiene algún costo?</summary>
+          <p>No, la invitación es gratuita. Solo ven con ganas de probar nuestros productos.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:0.1s">
+          <summary>¿Debo llevar la invitación impresa?</summary>
+          <p>No hace falta. Con mostrar esta página en tu celular es suficiente.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:0.2s">
+          <summary>¿Tienen opciones sin gluten o veganas?</summary>
+          <p>Escríbenos antes de venir y te contamos qué opciones tenemos disponibles.</p>
+        </details>
+
+        <details class="faq__item reveal" style="--d:0.3s">
+          <summary>¿Puedo hacer pedidos por encargo?</summary>
+          <p>Sí. Para pedidos especiales, escríbenos con unos días de anticipación.</p>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <p class="footer__brand">Proyecto Carlota</p>
+        <p>Pastelería artesanal hecha con cariño.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Horario</h4>
+        <p>Lunes a sábado</p>
+        <p>9:00 am - 6:00 pm</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>@proyectocarlota</p>
+        <p>+502 0000 0000</p>
+      </div>
+
+    </div>
+
+    <a class="footer__top" href="#top"><span aria-hidden="true">&uarr;</span> Volver arriba</a>
+    <p class="footer__copy"><span class="beat">&hearts;</span> &copy; 2026 Proyecto Carlota <span class="beat">&hearts;</span></p>
+  </footer>
+
+  <script>
+
+    (function () {
+      var els = document.querySelectorAll(".reveal, .draw");
+      if (!("IntersectionObserver" in window)) {
+        els.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("#wobble animate").forEach(function (a) { a.remove(); });
+    }
+  </script>
+
+</body>
+</html>
